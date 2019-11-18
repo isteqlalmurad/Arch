@@ -153,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
                 fragmentTransaction.replace(R.id.place_holder, listFragment);
                 fragmentTransaction.commit();*/
                 Toast.makeText(MainActivity.this, "Successfully Added", Toast.LENGTH_SHORT).show();
-              //  dialog.dismiss();
+                dialog.dismiss();
             }
         });
         dialog.show();
