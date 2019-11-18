@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TrialActivity"
+
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_desgin"
+        android:text="@string/welcome_to_second_screen"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:contentDescription="TODO"
+
+        app:srcCompat="@drawable/second1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Current User"
+        android:background="#44B7C7"
+        android:textColor="@color/white"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/ReciveText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+
+        android:textStyle="bold"
+        android:background="#FF6944"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:background="#44B7C7"
+        android:textColor="@color/white"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/ReciveText2"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+
+        android:background="#FF6944" />
+
+    <Button
+        android:id="@+id/mButtonLogin"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_desgin"
+        android:text="Back To main Screen"
+        android:textColor="@color/white"
+        android:textColorHint="@color/dark_gray"
+        android:textStyle="bold"
+        />
+
+
+</LinearLayout>

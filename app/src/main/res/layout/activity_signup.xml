@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignupActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="450dp"
+        android:layout_height="134dp"
+        android:layout_gravity="center_horizontal"
+
+        app:srcCompat="@drawable/murad" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#FF6944"
+        android:textAlignment="center"/>
+
+    <EditText
+
+        android:id="@+id/et_creat_account_user_name"
+        android:layout_marginTop="40dp"
+        android:layout_width="310dp"
+        android:layout_gravity="center"
+        android:drawableTint="#FF6944"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:layout_height="45dp"
+        android:background="@drawable/text_view"
+        android:backgroundTint="#F0EDED"
+        android:ems="10"
+        android:hint="  User Name"
+        android:textColor="#FF6944"
+        android:textColorHint="#85FF6944" />
+
+    <EditText
+        android:id="@+id/et_Creat_account_full_name"
+        android:layout_width="310dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/et_creat_account_user_name"
+        android:background="@drawable/text_view"
+        android:backgroundTint="#F0EDED"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawableTint="#FF6944"
+        android:hint="  Full Name "
+        android:inputType="text"
+        android:textColor="#FF6944"
+        android:textColorHint="#85FF6944" />
+
+    <EditText
+        android:id="@+id/et_second_username"
+        android:layout_width="310dp"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center"
+        android:drawableTint="#FF6944"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:layout_height="45dp"
+        android:background="@drawable/text_view"
+        android:backgroundTint="#F0EDED"
+        android:ems="10"
+        android:hint="  Email"
+        android:textColor="#FF6944"
+        android:textColorHint="#85FF6944" />
+
+    <EditText
+        android:id="@+id/et_second_password"
+        android:layout_width="310dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/et_second_username"
+        android:background="@drawable/text_view"
+        android:backgroundTint="#F0EDED"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawableTint="#FF6944"
+        android:hint="  Password "
+        android:inputType="textPassword"
+        android:textColor="#FF6944"
+        android:textColorHint="#85FF6944" />
+
+    <Button
+        android:id="@+id/sing_up"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_desgin"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textColorHint="@color/dark_gray"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I'm already a member --->"
+        android:textStyle="bold"
+        android:onClick="BackToSignUP"
+        android:textColor="#44B7C7"
+        android:textSize="20sp"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:textAlignment="center"
+        android:layout_marginTop="8sp"/>
+
+
+
+
+</LinearLayout>

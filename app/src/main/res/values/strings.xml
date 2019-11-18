@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Arch</string>
+    <string name="back_to_login_screen">BACK TO LOGIN SCREEN</string>
+    <string name="welcome_to_second_screen">Welcome To Second Screen</string>
+    <string name="user_loin">ARCH</string>
+    <string name="user_neme">  User Name</string>
+    <string name="email_id">Email</string>
+
+    <string name="nav_notification">Notificaiton</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_account">Account</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Home Fragment</string>
+    <string name="title_activity_bottom_nav">BottomNav</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_bottom_navegation">BottomNavegation</string>
+</resources>
