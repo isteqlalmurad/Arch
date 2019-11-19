@@ -23,7 +23,8 @@ public class DatabaseManager {
         return this;
     }
 
-    public void close() {
+    public void close()
+    {
         dbHelper.close();
     }
 

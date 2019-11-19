@@ -4,6 +4,7 @@ package com.corefield.arch.Activity;
 import android.app.Dialog;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -20,6 +21,7 @@ import android.widget.Toast;
 import android.widget.Toolbar;
 
 import com.corefield.arch.DATABASE.DatabaseManager;
+import com.corefield.arch.DATABASE.SignupDatabaseManager;
 import com.corefield.arch.Fragment.AccountFragment;
 import com.corefield.arch.Fragment.HomeFragment;
 import com.corefield.arch.Fragment.ListFragment;
@@ -52,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         mMainFrameLayout = findViewById(R.id.place_holder);
         mBottomNavigation = findViewById(R.id.main_navitation);
 
-
+       fetchData();
         // fragment passing function
 
         setFragment(mHomeFragment);
@@ -115,6 +117,16 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.place_holder, fragment);
         fragmentTransaction.commit();
+
+    }
+
+    private void fetchData() {
+        SignupDatabaseManager signupDatabaseManager = new SignupDatabaseManager(this);
+        Cursor cursor = signupDatabaseManager.fetch();
+
+        String firstName = cursor.getString(cursor.getColumnIndex("username"));
+        Toast.makeText(this, firstName, Toast.LENGTH_SHORT).show();
+
 
     }
 

@@ -25,10 +25,21 @@ public class ListFragment extends Fragment {
     private View mRootview;
     private DatabaseManager dbManager;
     private SimpleCursorAdapter adapter;
-    final String[] from = new String[]{DatabaseHelper._ID,
-            DatabaseHelper.NAME, String.valueOf(DatabaseHelper.MARKS)};
 
-    final int[] to = new int[]{R.id.id, R.id.name, R.id.mark};
+    final String[] from = new String[]
+            {
+
+            DatabaseHelper._ID,
+            DatabaseHelper.NAME,
+            String.valueOf(DatabaseHelper.MARKS)
+            };
+
+    final int[] to = new int[]
+            {
+                    R.id.id,
+                    R.id.name,
+                    R.id.mark
+            };
 
     public ListFragment() {
         // Required empty public constructor
@@ -36,9 +47,9 @@ public class ListFragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 
+    {
 
         // Inflate the layout for this fragment
         mRootview = inflater.inflate(R.layout.fragment_list, container, false);
@@ -49,25 +60,12 @@ public class ListFragment extends Fragment {
         dbManager = new DatabaseManager(getActivity());
         dbManager.open();
         Cursor cursor = dbManager.fetch();
-
         final ListView list = mRootview.findViewById(R.id.list_view);
-        // list.setEmptyView(mRootview.findViewById(R.id.empty));
 
+        // list.setEmptyView(mRootview.findViewById(R.id.empty));
         adapter = new SimpleCursorAdapter(getActivity(), R.layout.listview_custom, cursor, from, to, 0);
         adapter.notifyDataSetChanged();
-
         list.setAdapter(adapter);
-//        arrayList.add("agdjsga");
-//        arrayList.add("afdjsga");
-//        arrayList.add("agdfdgsga");
-//        arrayList.add("agdjsga");
-//        arrayList.add("afdga");
-//        arrayList.add("agfdgsga");
-//        arrayList.add("agfdjsga");
-//        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, arrayList);
-//        list.setAdapter(arrayAdapter);
-
-
         return mRootview;
     }
 

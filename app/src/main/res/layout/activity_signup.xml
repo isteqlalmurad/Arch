@@ -60,7 +60,7 @@
         android:textColorHint="#85FF6944" />
 
     <EditText
-        android:id="@+id/et_second_username"
+        android:id="@+id/et_email"
         android:layout_width="310dp"
         android:layout_marginTop="18dp"
         android:layout_gravity="center"
@@ -80,7 +80,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="18dp"
         android:layout_height="45dp"
-        android:layout_below="@id/et_second_username"
+        android:layout_below="@id/et_email"
         android:background="@drawable/text_view"
         android:backgroundTint="#F0EDED"
         android:drawableLeft="@drawable/ic_lock_black_24dp"
@@ -91,7 +91,7 @@
         android:textColorHint="#85FF6944" />
 
     <Button
-        android:id="@+id/sing_up"
+        android:id="@+id/btn_singup"
         android:layout_width="302dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
